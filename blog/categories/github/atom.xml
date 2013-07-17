@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Web Adventures]]></title>
-  <link href="http://AydinSakar.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: GitHub | My Web Adventures]]></title>
+  <link href="http://AydinSakar.github.io/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://AydinSakar.github.io/"/>
   <updated>2013-07-17T12:17:04-04:00</updated>
   <id>http://AydinSakar.github.io/</id>
@@ -37,23 +37,6 @@ This contains the source of Octopress <em>AND</em> your blog posts. Octopress ge
 
 
 <p>The bottom line is &ldquo;master&rdquo; is the generated blog, and the &ldquo;source&rdquo; is the raw stuff. They are not actually branches of a source tree in a usual sense. These two branches are completely different thigs which you should never manually deal with. This is kind of a <em>hack</em> that I had to understand, and which probably was the source of quite a bit of a confusion.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Workflowy]]></title>
-    <link href="http://AydinSakar.github.io/blog/2013/07/16/workflowy/"/>
-    <updated>2013-07-16T08:28:00-04:00</updated>
-    <id>http://AydinSakar.github.io/blog/2013/07/16/workflowy</id>
-    <content type="html"><![CDATA[<h2>Workflowy Rocks!</h2>
-
-<p>I just learned about <a href="https://workflowy.com/?ref=14e3069c">Workflowy</a>. It is a super duper easy todo/note taking/organizing/cheat sheet/mind map/brain map/whatever tool.</p>
-
-<p>Disclaimer: I earn 250 items/month if you follow this link and register to be a member.</p>
-
-<p>It is free to use for 500 items/month and you get 250 items/month for each person using your link to register. Pro version is $4.99/month or $49/year, which is not that bad for this fantastic tool.</p>
-
-<p>Give it a try!</p>
 ]]></content>
   </entry>
   

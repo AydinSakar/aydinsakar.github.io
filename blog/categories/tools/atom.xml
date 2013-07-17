@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Web Adventures]]></title>
-  <link href="http://AydinSakar.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Tools | My Web Adventures]]></title>
+  <link href="http://AydinSakar.github.io/blog/categories/tools/atom.xml" rel="self"/>
   <link href="http://AydinSakar.github.io/"/>
   <updated>2013-07-17T12:17:04-04:00</updated>
   <id>http://AydinSakar.github.io/</id>
