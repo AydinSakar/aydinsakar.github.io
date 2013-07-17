@@ -4,7 +4,7 @@
   <title><![CDATA[Category: GitHub | My Web Adventures]]></title>
   <link href="http://AydinSakar.github.io/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://AydinSakar.github.io/"/>
-  <updated>2013-07-17T13:22:58-04:00</updated>
+  <updated>2013-07-17T17:03:22-04:00</updated>
   <id>http://AydinSakar.github.io/</id>
   <author>
     <name><![CDATA[Aydın Sakar]]></name>
@@ -18,21 +18,25 @@
     <link href="http://AydinSakar.github.io/blog/2013/07/17/octopress/"/>
     <updated>2013-07-17T11:50:00-04:00</updated>
     <id>http://AydinSakar.github.io/blog/2013/07/17/octopress</id>
-    <content type="html"><![CDATA[<p>I am using <a href="http://octopress.org/">Octopress</a> to publish this blog.</p>
+    <content type="html"><![CDATA[<p>I am using <a href="http://octopress.org/" title="Octopress">Octopress</a> to publish this blog.</p>
 
 <p>I am using Windows 7 for daily work so had to install Octopress and GitHub on a Windows machine. I am planning to write a series of tutorials on the problems I faced making all work together with Windows.</p>
 
+<hr />
+
 <p>I just want to make a brief note about the confusion I had when I tried to understand Octopress: The repository structure.</p>
 
-<p>You have to have username.github.io named repository at <a href="https://github.com/">GitHub</a> to use GitHub Pages. The repository of this blog is: <a href="https://github.com/AydinSakar/aydinsakar.github.io">aydinsakar.github.io</a> You can also have project pages, but that is another topic for a blog post.</p>
+<p>You have to have username.github.io named repository at <a href="https://github.com/" title="GitHub">GitHub</a> to use GitHub Pages. The repository of this blog is: <a href="https://github.com/AydinSakar/aydinsakar.github.io">https://github.com/AydinSakar/aydinsakar.github.io</a> You can also have project pages, but that is another topic for a blog post.</p>
 
 <p>Octopress manages two branches in your username.github.io repository:</p>
 
 <ol>
-<li>master branch:
-This is the actual branch that GitHub uses to publish your blog. When Github sees a push to this branch, they republish your content.</li>
-<li>source branch:
-This contains the source of Octopress <em>AND</em> your blog posts. Octopress generates the content from this branch and puts everything in a &ldquo;_deploy&rdquo; directory which is the actual &ldquo;master&rdquo; branch which is then pushed to GitHub. You have to remember to commit and push the &ldquo;source&rdquo; branch yourself.</li>
+<li><p>master branch:</p>
+
+<p> This is the actual branch that GitHub uses to publish your blog. When Github sees a push to this branch, they republish your content.</p></li>
+<li><p>source branch:</p>
+
+<p> This contains the source of Octopress <em>AND</em> your blog posts. Octopress generates the content from this branch and puts everything in a &ldquo;_deploy&rdquo; directory which is the actual &ldquo;master&rdquo; branch which is then pushed to GitHub. You have to remember to commit and push the &ldquo;source&rdquo; branch yourself.</p></li>
 </ol>
 
 

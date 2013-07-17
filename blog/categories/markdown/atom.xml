@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Markdown | My Web Adventures]]></title>
+  <link href="http://AydinSakar.github.io/blog/categories/markdown/atom.xml" rel="self"/>
+  <link href="http://AydinSakar.github.io/"/>
+  <updated>2013-07-17T17:03:22-04:00</updated>
+  <id>http://AydinSakar.github.io/</id>
+  <author>
+    <name><![CDATA[Aydın Sakar]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My Markdown Cheatsheet]]></title>
+    <link href="http://AydinSakar.github.io/blog/2013/07/17/my-markdown-cheatsheet/"/>
+    <updated>2013-07-17T15:49:00-04:00</updated>
+    <id>http://AydinSakar.github.io/blog/2013/07/17/my-markdown-cheatsheet</id>
+    <content type="html"><![CDATA[<p>Since this blog will also serve as my cheatsheets repository for everything I want to remember, here is my <a href="http://daringfireball.net/projects/markdown/syntax" title="Markdown">markdown</a> cheatsheet:</p>
+
+<ul>
+<li>Whenever an indentation is needed it is allways <strong>1 tab</strong> or <strong>4 spaces</strong> in markdown.</li>
+</ul>
+
+
+<h5>Headers:</h5>
+
+<p>```</p>
+
+<h1>h1 Header</h1>
+
+<h2>h2 Header</h2>
+
+<h3>h3 Header</h3>
+
+<h4>h4 Header</h4>
+
+<h5>h5 Header</h5>
+
+<h6>h6 Header</h6>
+
+<p>```</p>
+
+<h1>h1 Header</h1>
+
+<h2>h2 Header</h2>
+
+<h3>h3 Header</h3>
+
+<h4>h4 Header</h4>
+
+<h5>h5 Header</h5>
+
+<h6>h6 Header</h6>
+
+<h4>Lists:</h4>
+
+<p><code>
+* first item
+* second item
+* third item
+or
+- first item
+- second item
+- third item
+or
++ first item
++ second item
++ third item
+</code>
+* first item
+* second item
+* third item</p>
+
+<h4>Numbered Lists</h4>
+
+<p><code>
+1. first item
+2. second item
+3. third item
+</code>
+1. first item
+2. second item
+3. third item</p>
+
+<h4>Mix Lists</h4>
+
+<p>```
+1. first item</p>
+
+<pre><code>+ first item
++ second item
++ third item
+</code></pre>
+
+<ol>
+<li>second item</li>
+<li>third item
+```</li>
+<li>first item
+
+<ul>
+<li>first item</li>
+<li>second item</li>
+<li>third item</li>
+</ul>
+</li>
+<li>second item</li>
+<li>third item</li>
+</ol>
+
+
+<h4>Emphasis/Strong</h4>
+
+<p><code>
+*emphasized*
+_emphasized_
+**strong**
+__strong__
+***strong emphasized***
+___strong emphasized___
+</code>
+<em>emphasized</em><br/>
+<strong>strong</strong><br/>
+<strong><em>strong emphasized</em></strong></p>
+
+<h4>Code Blocks:</h4>
+
+<p>```</p>
+
+<pre><code>This is a code block indented by 4 spaces
+</code></pre>
+
+<p>```</p>
+
+<pre><code>This is a code block indented by 4 spaces and the spaces removed
+</code></pre>
+
+<h4>Blockquotes:</h4>
+
+<p>```</p>
+
+<blockquote><p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+
+<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.
+```
+This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+
+<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.</p></blockquote>
+
+<h4>Markdown in Blockquotes:</h4>
+
+<p>```</p>
+
+<blockquote><h2>This is a header.</h2>
+
+<ol>
+<li> This is the first list item.</li>
+<li> This is the second list item.</li>
+</ol>
+
+
+<p>Here&rsquo;s some example code:</p>
+
+<pre><code>return shell_exec("echo $input | $markdown_script");
+</code></pre>
+
+<p>```</p>
+
+<h2>This is a header.</h2>
+
+<ol>
+<li> This is the first list item.</li>
+<li> This is the second list item.</li>
+</ol>
+
+
+<p>Here&rsquo;s some example code:</p>
+
+<pre><code>return shell_exec("echo $input | $markdown_script");
+</code></pre></blockquote>
+
+<h4>Blockquote in blockquote:</h4>
+
+<p>```</p>
+
+<blockquote><p>This is the first level of quoting.</p>
+
+<blockquote><p>This is nested blockquote.</p></blockquote>
+
+<p>Back to the first level.
+```</p>
+
+<p>This is the first level of quoting.</p>
+
+<blockquote><p>This is nested blockquote.</p></blockquote>
+
+<p>Back to the first level.</p></blockquote>
+]]></content>
+  </entry>
+  
+</feed>
