@@ -4,7 +4,7 @@
   <title><![CDATA[My Web Adventures]]></title>
   <link href="http://AydinSakar.github.io/atom.xml" rel="self"/>
   <link href="http://AydinSakar.github.io/"/>
-  <updated>2013-07-16T07:44:57-04:00</updated>
+  <updated>2013-07-17T11:40:47-04:00</updated>
   <id>http://AydinSakar.github.io/</id>
   <author>
     <name><![CDATA[Aydın Sakar]]></name>
@@ -12,5 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Workflowy]]></title>
+    <link href="http://AydinSakar.github.io/blog/2013/07/16/workflowy/"/>
+    <updated>2013-07-16T08:28:00-04:00</updated>
+    <id>http://AydinSakar.github.io/blog/2013/07/16/workflowy</id>
+    <content type="html"><![CDATA[<h2>Workflowy Rocks!</h2>
+
+<p>I just learned about <a href="https://workflowy.com/?ref=14e3069c">Workflowy</a>. It is a super duper easy todo/note taking/organizing/cheat sheet/mind map/brain map/whatever tool</p>
+
+<p>Disclaimer: I earn 250 items/month if you follow this link and register to be a member</p>
+
+<p>It is free to use for 500 items/month and you get 250 items/month for each person using your link to register. Pro version is $4.99/month or $49/year, which is not that bad for this fantastic tool.</p>
+
+<p>Give it a try!</p>
+]]></content>
+  </entry>
   
 </feed>
