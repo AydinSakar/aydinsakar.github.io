@@ -4,7 +4,7 @@
   <title><![CDATA[My Web Adventures]]></title>
   <link href="http://AydinSakar.github.io/atom.xml" rel="self"/>
   <link href="http://AydinSakar.github.io/"/>
-  <updated>2013-07-17T12:17:04-04:00</updated>
+  <updated>2013-07-17T12:51:50-04:00</updated>
   <id>http://AydinSakar.github.io/</id>
   <author>
     <name><![CDATA[Aydın Sakar]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fixed Layout eBooks]]></title>
+    <link href="http://AydinSakar.github.io/blog/2013/07/17/fixed-layout-ebooks/"/>
+    <updated>2013-07-17T12:31:00-04:00</updated>
+    <id>http://AydinSakar.github.io/blog/2013/07/17/fixed-layout-ebooks</id>
+    <content type="html"><![CDATA[<p>Allmost all of the eBook market is based on free-flowing eBooks, but again most of the textbooks, children books etc., are fixed page layout books.</p>
+
+<p>Preparing fixed layout eBooks are easier now thanks to <a href="http://idpf.org/epub/30">ePub3</a> standard which is just being adapted by the industry.</p>
+
+<p>There are not too many resources for the fixed layout books. The one I found to be very helpfull is: <a href="http://azardi.infogridpacific.com/resources.html">infogrid pacific Azardi</a>. Thanks to these guys, I could finally manage to make an iPad friendly ePub3 Fixed Layout eBook, which I plan to write a series of tutorials on the details of the process.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress]]></title>
