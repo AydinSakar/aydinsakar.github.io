@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Fargo | My Web Adventures]]></title>
+  <link href="http://AydinSakar.github.io/blog/categories/fargo/atom.xml" rel="self"/>
+  <link href="http://AydinSakar.github.io/"/>
+  <updated>2013-07-18T12:28:40-04:00</updated>
+  <id>http://AydinSakar.github.io/</id>
+  <author>
+    <name><![CDATA[Aydın Sakar]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Fargo]]></title>
+    <link href="http://AydinSakar.github.io/blog/2013/07/18/fargo/"/>
+    <updated>2013-07-18T11:08:00-04:00</updated>
+    <id>http://AydinSakar.github.io/blog/2013/07/18/fargo</id>
+    <content type="html"><![CDATA[<p>Another notetaking, todo list, outlining etc., web application which seems very promising: <a href="fargo.io">Fargo.io</a> brought to us by our old <a href="http://scripting.com/">Dave Winer</a>.</p>
+
+<p>Fargo uses your <a href="http://www.dropbox.com">Dropbox</a> account to save all the work you have done. That means no exporting! You always have your files in <a href="http://en.wikipedia.org/wiki/OPML">OPML</a> format.</p>
+]]></content>
+  </entry>
+  
+</feed>

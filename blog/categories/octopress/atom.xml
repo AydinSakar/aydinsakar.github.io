@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | My Web Adventures]]></title>
   <link href="http://AydinSakar.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://AydinSakar.github.io/"/>
-  <updated>2013-07-18T09:24:25-04:00</updated>
+  <updated>2013-07-18T12:28:40-04:00</updated>
   <id>http://AydinSakar.github.io/</id>
   <author>
     <name><![CDATA[Aydın Sakar]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Why Static Site Generation?]]></title>
+    <link href="http://AydinSakar.github.io/blog/2013/07/18/why-static-site-generation/"/>
+    <updated>2013-07-18T10:46:00-04:00</updated>
+    <id>http://AydinSakar.github.io/blog/2013/07/18/why-static-site-generation</id>
+    <content type="html"><![CDATA[<p>I have a personal blog on Blogger, which I never felt very easy about. Writing and posting on the Blogger interface and having all the content at their server and not having the posts on a version control etc., all made me uncomfortable.</p>
+
+<p>Then, I discovered GitHub pages and Octopress and everything felt very natural.</p>
+
+<p>Brent Simmons had written all about this static site generation and blogging system back in</p>
+
+<ol>
+<li>2009: <a href="http://inessential.com/2009/01/30/new_publishing_system_tour_of_my_head">New publishing system / tour of my head</a></li>
+<li>and 2011: <a href="http://inessential.com/2011/03/16/a_plea_for_baked_weblogs">A plea for baked weblogs</a></li>
+<li>and: <a href="http://inessential.com/2011/03/17/more_on_baked_blogs">More on baked blogs</a></li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Code Blocks Options with Octopress]]></title>

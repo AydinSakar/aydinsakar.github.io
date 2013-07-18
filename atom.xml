@@ -4,7 +4,7 @@
   <title><![CDATA[My Web Adventures]]></title>
   <link href="http://AydinSakar.github.io/atom.xml" rel="self"/>
   <link href="http://AydinSakar.github.io/"/>
-  <updated>2013-07-18T09:24:25-04:00</updated>
+  <updated>2013-07-18T12:28:40-04:00</updated>
   <id>http://AydinSakar.github.io/</id>
   <author>
     <name><![CDATA[Aydın Sakar]]></name>
@@ -12,6 +12,97 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fargo]]></title>
+    <link href="http://AydinSakar.github.io/blog/2013/07/18/fargo/"/>
+    <updated>2013-07-18T11:08:00-04:00</updated>
+    <id>http://AydinSakar.github.io/blog/2013/07/18/fargo</id>
+    <content type="html"><![CDATA[<p>Another notetaking, todo list, outlining etc., web application which seems very promising: <a href="fargo.io">Fargo.io</a> brought to us by our old <a href="http://scripting.com/">Dave Winer</a>.</p>
+
+<p>Fargo uses your <a href="http://www.dropbox.com">Dropbox</a> account to save all the work you have done. That means no exporting! You always have your files in <a href="http://en.wikipedia.org/wiki/OPML">OPML</a> format.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why Static Site Generation?]]></title>
+    <link href="http://AydinSakar.github.io/blog/2013/07/18/why-static-site-generation/"/>
+    <updated>2013-07-18T10:46:00-04:00</updated>
+    <id>http://AydinSakar.github.io/blog/2013/07/18/why-static-site-generation</id>
+    <content type="html"><![CDATA[<p>I have a personal blog on Blogger, which I never felt very easy about. Writing and posting on the Blogger interface and having all the content at their server and not having the posts on a version control etc., all made me uncomfortable.</p>
+
+<p>Then, I discovered GitHub pages and Octopress and everything felt very natural.</p>
+
+<p>Brent Simmons had written all about this static site generation and blogging system back in</p>
+
+<ol>
+<li>2009: <a href="http://inessential.com/2009/01/30/new_publishing_system_tour_of_my_head">New publishing system / tour of my head</a></li>
+<li>and 2011: <a href="http://inessential.com/2011/03/16/a_plea_for_baked_weblogs">A plea for baked weblogs</a></li>
+<li>and: <a href="http://inessential.com/2011/03/17/more_on_baked_blogs">More on baked blogs</a></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Dealing with the Path in Windows 7. I]]></title>
+    <link href="http://AydinSakar.github.io/blog/2013/07/18/dealing-with-the-path-in-windows-7/"/>
+    <updated>2013-07-18T09:57:00-04:00</updated>
+    <id>http://AydinSakar.github.io/blog/2013/07/18/dealing-with-the-path-in-windows-7</id>
+    <content type="html"><![CDATA[<p>The <code>Path</code> environment variable in Windows is always a problem to deal with.</p>
+
+<p>This seems to be the hard way to manage:</p>
+
+<p>You get to open the <code>System Dialog</code> first, which is in the <code>Control Panel</code>.</p>
+
+<h3>Control Panel:</h3>
+
+<p><img src="http://AydinSakar.github.io/images/control_panel.png" title="Control Panel" alt="Control Panel in Windows 7"></p>
+
+<h3>Control Panel Search:</h3>
+
+<p>If you just type &ldquo;path&rdquo; in the search box at the upper right corner, <code>Control Panel</code> items will be filtered as:</p>
+
+<p><img src="http://AydinSakar.github.io/images/control_panel_search_path.png" title="Control Panel Search Path" alt="Control Panel Search Path in Windows 7"></p>
+
+<p>Now you have three options:</p>
+
+<ol>
+<li><p>If you click on <code>System</code>, you get the <code>System</code> Dialog.</p></li>
+<li><p>If you click on <code>Edit environment variables for your account</code>, you get the <code>Environment Variables</code> dialog but the <code>System Variables</code> option is disabled, and you can only change the <code>User variables</code>.<br/>
+<img src="http://AydinSakar.github.io/images/environment_variables_user.png" title="Environment Variables User Dialog" alt="Environment Variables in Windows 7"></p></li>
+<li><p>If you click on <code>Edit the system environment variables</code> option you get the <code>Environment Variables</code> dialog.</p></li>
+</ol>
+
+
+<p>Or, if you prefer to right-click on <code>Computer</code> and select <code>Properties</code>, you get the <code>System</code> dialog as well, and now you can just click <code>Change Settings</code> here, then click <code>Environment Variables</code> at the <code>System Properties</code> dialog.</p>
+
+<h3>System Dialog:</h3>
+
+<p><img src="http://AydinSakar.github.io/images/system.png" title="System Dialog" alt="System Dialog in Windows 7"></p>
+
+<h3>System Properties:</h3>
+
+<p><img src="http://AydinSakar.github.io/images/system_properties.png" title="System Properties Dialog" alt="System Properties Dialog in Windows 7"></p>
+
+<h3>Environment Variables:</h3>
+
+<p><img src="http://AydinSakar.github.io/images/environment_variables.png" title="Environment Variables Dialog" alt="Environment Variables in Windows 7"></p>
+
+<p>You have to select the <code>Path</code> variable at the <code>System variables</code> and click the <code>Edit</code> button to finally get to <code>Edit System Variable</code> dialog.</p>
+
+<h3>Edit System Variable:</h3>
+
+<p><img src="http://AydinSakar.github.io/images/edit_system_variable.png" title="Edit System Variable Dialog" alt="Edit System Variable Dialog in Windows 7"></p>
+
+<p>Here you have to edit the <code>Path</code> variable value and click <code>OK</code>, which is terrifying if your <code>Path</code> looks like this:</p>
+
+<pre><code>C:\Python27\;C:\Program Files (x86)\HP SimplePass\x64;C:\Program Files (x86)\HP SimplePass\;C:\Program Files (x86)\HP SimplePass\x64;C:\Program Files (x86)\HP SimplePass\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\12.0\DLLShared\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\texlive\2012\bin\win32;C:\Program Files (x86)\Inkscape;C:\Program Files (x86)\Pandoc\bin;C:\Program Files\7-Zip;C:\Program Files (x86)\Calibre2\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Lua\5.1;C:\Program Files (x86)\Lua\5.1\clibs;C:\Program Files\Calibre2\;C:\Program Files (x86)\infogridpacific\AZARDI\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\infogridpacific\AZARDI\bin;C:\nodejs\;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Git\bin
+</code></pre>
+
+<p>It is probably better to <code>Copy</code> and <code>Paste</code> this value to a text editor, carefully edit and <code>Paste</code> back.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Code Blocks Options with Octopress]]></title>

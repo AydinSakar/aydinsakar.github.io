@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Dealing with the Path in Windows 7. I - My Web Adventures</title>
+  <meta name="author" content="Aydın Sakar">
+
+  
+  <meta name="description" content="The Path environment variable in Windows is always a problem to deal with. This seems to be the hard way to manage: You get to open the System Dialog &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://AydinSakar.github.io/blog/2013/07/18/dealing-with-the-path-in-windows-7">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="My Web Adventures" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Web Adventures</a></h1>
+  
+    <h2>A blog for hackers by a dinosaur hacker.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:AydinSakar.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Dealing With the Path in Windows 7. I</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-18T09:57:00-04:00" pubdate data-updated="true">Jul 18<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>The <code>Path</code> environment variable in Windows is always a problem to deal with.</p>
+
+<p>This seems to be the hard way to manage:</p>
+
+<p>You get to open the <code>System Dialog</code> first, which is in the <code>Control Panel</code>.</p>
+
+<h3>Control Panel:</h3>
+
+<p><img src="/images/control_panel.png" title="Control Panel" alt="Control Panel in Windows 7"></p>
+
+<h3>Control Panel Search:</h3>
+
+<p>If you just type &ldquo;path&rdquo; in the search box at the upper right corner, <code>Control Panel</code> items will be filtered as:</p>
+
+<p><img src="/images/control_panel_search_path.png" title="Control Panel Search Path" alt="Control Panel Search Path in Windows 7"></p>
+
+<p>Now you have three options:</p>
+
+<ol>
+<li><p>If you click on <code>System</code>, you get the <code>System</code> Dialog.</p></li>
+<li><p>If you click on <code>Edit environment variables for your account</code>, you get the <code>Environment Variables</code> dialog but the <code>System Variables</code> option is disabled, and you can only change the <code>User variables</code>.<br/>
+<img src="/images/environment_variables_user.png" title="Environment Variables User Dialog" alt="Environment Variables in Windows 7"></p></li>
+<li><p>If you click on <code>Edit the system environment variables</code> option you get the <code>Environment Variables</code> dialog.</p></li>
+</ol>
+
+
+<p>Or, if you prefer to right-click on <code>Computer</code> and select <code>Properties</code>, you get the <code>System</code> dialog as well, and now you can just click <code>Change Settings</code> here, then click <code>Environment Variables</code> at the <code>System Properties</code> dialog.</p>
+
+<h3>System Dialog:</h3>
+
+<p><img src="/images/system.png" title="System Dialog" alt="System Dialog in Windows 7"></p>
+
+<h3>System Properties:</h3>
+
+<p><img src="/images/system_properties.png" title="System Properties Dialog" alt="System Properties Dialog in Windows 7"></p>
+
+<h3>Environment Variables:</h3>
+
+<p><img src="/images/environment_variables.png" title="Environment Variables Dialog" alt="Environment Variables in Windows 7"></p>
+
+<p>You have to select the <code>Path</code> variable at the <code>System variables</code> and click the <code>Edit</code> button to finally get to <code>Edit System Variable</code> dialog.</p>
+
+<h3>Edit System Variable:</h3>
+
+<p><img src="/images/edit_system_variable.png" title="Edit System Variable Dialog" alt="Edit System Variable Dialog in Windows 7"></p>
+
+<p>Here you have to edit the <code>Path</code> variable value and click <code>OK</code>, which is terrifying if your <code>Path</code> looks like this:</p>
+
+<pre><code>C:\Python27\;C:\Program Files (x86)\HP SimplePass\x64;C:\Program Files (x86)\HP SimplePass\;C:\Program Files (x86)\HP SimplePass\x64;C:\Program Files (x86)\HP SimplePass\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\12.0\DLLShared\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\texlive\2012\bin\win32;C:\Program Files (x86)\Inkscape;C:\Program Files (x86)\Pandoc\bin;C:\Program Files\7-Zip;C:\Program Files (x86)\Calibre2\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Lua\5.1;C:\Program Files (x86)\Lua\5.1\clibs;C:\Program Files\Calibre2\;C:\Program Files (x86)\infogridpacific\AZARDI\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\infogridpacific\AZARDI\bin;C:\nodejs\;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Git\bin
+</code></pre>
+
+<p>It is probably better to <code>Copy</code> and <code>Paste</code> this value to a text editor, carefully edit and <code>Paste</code> back.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Aydın Sakar</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-18T09:57:00-04:00" pubdate data-updated="true">Jul 18<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/windows-7/'>Windows 7</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://AydinSakar.github.io/blog/2013/07/18/dealing-with-the-path-in-windows-7/" data-via="" data-counturl="http://AydinSakar.github.io/blog/2013/07/18/dealing-with-the-path-in-windows-7/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/07/17/code-blocks-options-with-octopress/" title="Previous Post: Code Blocks Options with Octopress">&laquo; Code Blocks Options with Octopress</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/07/18/why-static-site-generation/" title="Next Post: Why Static Site Generation?">Why Static Site Generation? &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/07/18/fargo/">Fargo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/18/why-static-site-generation/">Why Static Site Generation?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/18/dealing-with-the-path-in-windows-7/">Dealing With the Path in Windows 7. I</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/17/code-blocks-options-with-octopress/">Code Blocks Options With Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/17/my-markdown-cheatsheet/">My Markdown Cheatsheet</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/fargo/'>Fargo (1)</a></li>
+<li class='category'><a href='/blog/categories/fixed-layout-ebook/'>Fixed Layout eBook (1)</a></li>
+<li class='category'><a href='/blog/categories/github/'>GitHub (1)</a></li>
+<li class='category'><a href='/blog/categories/markdown/'>Markdown (2)</a></li>
+<li class='category'><a href='/blog/categories/octopress/'>Octopress (3)</a></li>
+<li class='category'><a href='/blog/categories/tools/'>Tools (2)</a></li>
+<li class='category'><a href='/blog/categories/windows-7/'>Windows 7 (1)</a></li>
+<li class='category'><a href='/blog/categories/workflowy/'>Workflowy (1)</a></li>
+<li class='category'><a href='/blog/categories/epub3/'>ePub3 (1)</a></li>
+
+  </ul>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Aydın Sakar -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
