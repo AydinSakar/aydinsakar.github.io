@@ -1,0 +1,6 @@
+[Octopress]:  http://octopress.org/ "Octopress"
+[GitHub]:     https://github.com/   "GitHub"
+[markdown]:   http://daringfireball.net/projects/markdown/syntax  "Markdown"
+[ePub3]:      http://idpf.org/epub/30
+[Workflowy]:  https://workflowy.com/?ref=14e3069c
+[infogrid pacific Azardi]:  http://azardi.infogridpacific.com/resources.html
