@@ -2,30 +2,34 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://AydinSakar.github.io/blog/2013/07/16/workflowy/</loc>
-        <lastmod>2013-07-17T12:16:49-04:00</lastmod>
+        <lastmod>2013-07-18T08:02:50-04:00</lastmod>
     </url>
     <url>
         <loc>http://AydinSakar.github.io/blog/2013/07/17/octopress/</loc>
-        <lastmod>2013-07-17T15:04:10-04:00</lastmod>
+        <lastmod>2013-07-18T08:02:50-04:00</lastmod>
     </url>
     <url>
         <loc>http://AydinSakar.github.io/blog/2013/07/17/fixed-layout-ebooks/</loc>
-        <lastmod>2013-07-17T12:51:37-04:00</lastmod>
+        <lastmod>2013-07-18T08:02:50-04:00</lastmod>
     </url>
     <url>
         <loc>http://AydinSakar.github.io/blog/2013/07/17/my-markdown-cheatsheet/</loc>
-        <lastmod>2013-07-17T17:01:48-04:00</lastmod>
+        <lastmod>2013-07-18T08:02:50-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://AydinSakar.github.io/blog/2013/07/17/code-blocks-options-with-octopress/</loc>
+        <lastmod>2013-07-18T09:14:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://AydinSakar.github.io/blog/archives/</loc>
-        <lastmod>2013-07-17T17:01:48-04:00</lastmod>
+        <lastmod>2013-07-18T09:14:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://AydinSakar.github.io/</loc>
-        <lastmod>2013-07-17T17:01:48-04:00</lastmod>
+        <lastmod>2013-07-18T09:14:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://AydinSakar.github.io/robots.txt</loc>
-        <lastmod>2013-07-15T21:05:09-04:00</lastmod>
+        <lastmod>2013-07-18T08:02:49-04:00</lastmod>
     </url>
 </urlset>

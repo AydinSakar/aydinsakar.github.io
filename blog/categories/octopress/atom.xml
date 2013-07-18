@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | My Web Adventures]]></title>
   <link href="http://AydinSakar.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://AydinSakar.github.io/"/>
-  <updated>2013-07-17T17:03:22-04:00</updated>
+  <updated>2013-07-18T09:24:25-04:00</updated>
   <id>http://AydinSakar.github.io/</id>
   <author>
     <name><![CDATA[Aydın Sakar]]></name>
@@ -12,6 +12,147 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Code Blocks Options with Octopress]]></title>
+    <link href="http://AydinSakar.github.io/blog/2013/07/17/code-blocks-options-with-octopress/"/>
+    <updated>2013-07-17T17:11:00-04:00</updated>
+    <id>http://AydinSakar.github.io/blog/2013/07/17/code-blocks-options-with-octopress</id>
+    <content type="html"><![CDATA[<p>I actually figured out several different options that we can use to insert code blocks with <a href="http://octopress.org/" title="Octopress">Octopress</a></p>
+
+<h3>1. Markdown codeblocks:</h3>
+
+<p>We have to use 4 spaces or 1 tab to designate that this is a codeblock.</p>
+
+<pre><code>    var respond = function(response, data, err) {
+        var responseObj = {data: data, error: err};
+        response.writeHead(200, {"Content-Type":"application/json"});
+        response.write(JSON.stringify(responseObj));
+        response.end();
+    };
+    var arr1 = new Array(arrayLength);
+    var arr2 = new Array(element0, element1, ..., elementN);
+</code></pre>
+
+<p>And this is what we get with the 4 spaces, or the tabs removed from the start of the line.</p>
+
+<pre><code>var respond = function(response, data, err) {
+    var responseObj = {data: data, error: err};
+    response.writeHead(200, {"Content-Type":"application/json"});
+    response.write(JSON.stringify(responseObj));
+    response.end();
+};
+var arr1 = new Array(arrayLength);
+var arr2 = new Array(element0, element1, ..., elementN);
+</code></pre>
+
+<p>And this is the HTML that is written for you:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>HTML Result </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;pre&gt;&lt;code&gt;</span>var respond = function(response, data, err) {
+</span><span class='line'>    var responseObj = {data: data, error: err};
+</span><span class='line'>    response.writeHead(200, {&quot;Content-Type&quot;:&quot;application/json&quot;});
+</span><span class='line'>    response.write(JSON.stringify(responseObj));
+</span><span class='line'>    response.end();
+</span><span class='line'>};
+</span><span class='line'>var arr1 = new Array(arrayLength);
+</span><span class='line'>var arr2 = new Array(element0, element1, ..., elementN);
+</span><span class='line'><span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;p&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>2. Backtick Code Blocks (GitHub Flavored Markdown):</h3>
+
+<pre><code>``` [language] [title] [url] [link text]
+var respond = function(response, data, err) {
+    var responseObj = {data: data, error: err};
+    response.writeHead(200, {"Content-Type":"application/json"});
+    response.write(JSON.stringify(responseObj));
+    response.end();
+};
+var arr1 = new Array(arrayLength);
+var arr2 = new Array(element0, element1, ..., elementN);
+```    
+</code></pre>
+
+<p>``` javascript Backtick Code Blocks (GitHub Flavored Markdown)
+var respond = function(response, data, err) {</p>
+
+<pre><code>var responseObj = {data: data, error: err};
+response.writeHead(200, {"Content-Type":"application/json"});
+response.write(JSON.stringify(responseObj));
+response.end();
+</code></pre>
+
+<p>};
+var arr1 = new Array(arrayLength);
+var arr2 = new Array(element0, element1, &hellip;, elementN);
+```</p>
+
+<h3>3. Codeblocks</h3>
+
+<p></p>
+
+<pre><code>{% codeblock [title] [lang:language] [url] [link text] %}
+var respond = function(response, data, err) {
+    var responseObj = {data: data, error: err};
+    response.writeHead(200, {"Content-Type":"application/json"});
+    response.write(JSON.stringify(responseObj));
+    response.end();
+};
+{% endcodeblock %}
+</code></pre>
+
+<p></p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Javascript Example </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">respond</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">response</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="kd">var</span> <span class="nx">responseObj</span> <span class="o">=</span> <span class="p">{</span><span class="nx">data</span><span class="o">:</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">error</span><span class="o">:</span> <span class="nx">err</span><span class="p">};</span>
+</span><span class='line'><span class="nx">response</span><span class="p">.</span><span class="nx">writeHead</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;Content-Type&quot;</span><span class="o">:</span><span class="s2">&quot;application/json&quot;</span><span class="p">});</span>
+</span><span class='line'><span class="nx">response</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">responseObj</span><span class="p">));</span>
+</span><span class='line'><span class="nx">response</span><span class="p">.</span><span class="nx">end</span><span class="p">();</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">};</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">arrayLength</span><span class="p">);</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">element0</span><span class="p">,</span> <span class="nx">element1</span><span class="p">,</span> <span class="o">&amp;</span><span class="nx">hellip</span><span class="p">;,</span> <span class="nx">elementN</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h4>Note:</h4>
+
+<p>For code-coloring to work, be sure you have Python27 at your Path.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress]]></title>
