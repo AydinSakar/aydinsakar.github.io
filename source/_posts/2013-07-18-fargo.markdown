@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Fargo"
+date: 2013-07-18 11:08
+comments: true
+categories: 
+- Fargo
+---
+
+Another notetaking, todo list, outlining etc., web application which seems very promising: [Fargo.io](fargo.io) brought to us by our old [Dave Winer](http://scripting.com/).
+
+Fargo uses your [Dropbox](http://www.dropbox.com) account to save all the work you have done. That means no exporting! You always have your files in [OPML](http://en.wikipedia.org/wiki/OPML) format.
