@@ -4,7 +4,7 @@
   <title><![CDATA[My Web Adventures]]></title>
   <link href="http://AydinSakar.github.io/atom.xml" rel="self"/>
   <link href="http://AydinSakar.github.io/"/>
-  <updated>2013-07-18T12:28:40-04:00</updated>
+  <updated>2013-07-18T13:07:00-04:00</updated>
   <id>http://AydinSakar.github.io/</id>
   <author>
     <name><![CDATA[Aydın Sakar]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Windows 7 Path Tricks]]></title>
+    <link href="http://AydinSakar.github.io/blog/2013/07/18/windows-7-path-tricks/"/>
+    <updated>2013-07-18T12:33:00-04:00</updated>
+    <id>http://AydinSakar.github.io/blog/2013/07/18/windows-7-path-tricks</id>
+    <content type="html"><![CDATA[<p>There are a number of things to remember when you deal with the <code>Path</code> environment variable in Windows.</p>
+
+<ol>
+<li><p>The items in the <code>Path</code> string are seperated by semicolon: <code>;</code>, there should be no space around the semicolon. &ldquo;C:\SomePath ; C:\AnotherPath&rdquo; is <strong>NOT</strong> OK.</p></li>
+<li><p>It is better to us <code>\</code> instead of any <code>/</code> in the string.</p></li>
+<li><p>No final backslash as in: <code>C:\SomeDirectory\</code>.</p></li>
+<li><p>Whenever you make a change to <code>Path</code> variable, be sure to close and reopen any Cmd or Shell window.</p></li>
+<li><p>You can add a new environment variable as &ldquo;myexedir&rdquo; and add that variable as ;%myexedir% to the Path string.</p></li>
+</ol>
+
+
+<p>For a discussion about these recommendations on <a href="http://stackoverflow.com">Stackoverflow</a> see: <a href="http://stackoverflow.com/questions/6318156/adding-python-path-on-windows-7">http://stackoverflow.com/questions/6318156/adding-python-path-on-windows-7</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Fargo]]></title>

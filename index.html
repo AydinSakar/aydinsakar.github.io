@@ -9,7 +9,7 @@
   <meta name="author" content="Aydın Sakar">
 
   
-  <meta name="description" content="Another notetaking, todo list, outlining etc., web application which seems very promising: Fargo.io brought to us by our old Dave Winer. Fargo uses &hellip;">
+  <meta name="description" content="There are a number of things to remember when you deal with the Path environment variable in Windows. The items in the Path string are seperated by &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +65,53 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/07/18/windows-7-path-tricks/">Windows 7 Path Tricks</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-18T12:33:00-04:00" pubdate data-updated="true">Jul 18<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>There are a number of things to remember when you deal with the <code>Path</code> environment variable in Windows.</p>
+
+<ol>
+<li><p>The items in the <code>Path</code> string are seperated by semicolon: <code>;</code>, there should be no space around the semicolon. &ldquo;C:\SomePath ; C:\AnotherPath&rdquo; is <strong>NOT</strong> OK.</p></li>
+<li><p>It is better to us <code>\</code> instead of any <code>/</code> in the string.</p></li>
+<li><p>No final backslash as in: <code>C:\SomeDirectory\</code>.</p></li>
+<li><p>Whenever you make a change to <code>Path</code> variable, be sure to close and reopen any Cmd or Shell window.</p></li>
+<li><p>You can add a new environment variable as &ldquo;myexedir&rdquo; and add that variable as ;%myexedir% to the Path string.</p></li>
+</ol>
+
+
+<p>For a discussion about these recommendations on <a href="http://stackoverflow.com">Stackoverflow</a> see: <a href="http://stackoverflow.com/questions/6318156/adding-python-path-on-windows-7">http://stackoverflow.com/questions/6318156/adding-python-path-on-windows-7</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -802,6 +849,10 @@ id sem consectetuer libero luctus adipiscing.</p></blockquote>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/07/18/windows-7-path-tricks/">Windows 7 Path Tricks</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/07/18/fargo/">Fargo</a>
       </li>
     
@@ -817,10 +868,6 @@ id sem consectetuer libero luctus adipiscing.</p></blockquote>
         <a href="/blog/2013/07/17/code-blocks-options-with-octopress/">Code Blocks Options With Octopress</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2013/07/17/my-markdown-cheatsheet/">My Markdown Cheatsheet</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -831,8 +878,9 @@ id sem consectetuer libero luctus adipiscing.</p></blockquote>
 <li class='category'><a href='/blog/categories/github/'>GitHub (1)</a></li>
 <li class='category'><a href='/blog/categories/markdown/'>Markdown (2)</a></li>
 <li class='category'><a href='/blog/categories/octopress/'>Octopress (3)</a></li>
+<li class='category'><a href='/blog/categories/path/'>Path (2)</a></li>
 <li class='category'><a href='/blog/categories/tools/'>Tools (2)</a></li>
-<li class='category'><a href='/blog/categories/windows-7/'>Windows 7 (1)</a></li>
+<li class='category'><a href='/blog/categories/windows-7/'>Windows 7 (2)</a></li>
 <li class='category'><a href='/blog/categories/workflowy/'>Workflowy (1)</a></li>
 <li class='category'><a href='/blog/categories/epub3/'>ePub3 (1)</a></li>
 
