@@ -4,7 +4,7 @@
   <title><![CDATA[My Web Adventures]]></title>
   <link href="http://AydinSakar.github.io/atom.xml" rel="self"/>
   <link href="http://AydinSakar.github.io/"/>
-  <updated>2013-07-18T20:43:29-04:00</updated>
+  <updated>2013-07-19T11:09:14-04:00</updated>
   <id>http://AydinSakar.github.io/</id>
   <author>
     <name><![CDATA[Aydın Sakar]]></name>
@@ -12,6 +12,68 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[URL Magic]]></title>
+    <link href="http://AydinSakar.github.io/blog/2013/07/19/url-magic/"/>
+    <updated>2013-07-19T10:19:00-04:00</updated>
+    <id>http://AydinSakar.github.io/blog/2013/07/19/url-magic</id>
+    <content type="html"><![CDATA[<p>I just wanted to check if I can see my blog without a Web Server.</p>
+
+<p>This is what I got when I clicked on the <code>index.html</code>:</p>
+
+<p><img src="http://AydinSakar.github.io/images/blog_in_chrome.png" title="My Poor Web Site" ></p>
+
+<p>When I checked the source I found out that all the links were as:</p>
+
+<pre><code>href="/blog/2013/07/18/windows-7-path-tricks/"
+</code></pre>
+
+<p>So we need a short cheatsheet for URLs in Web pages:</p>
+
+<h2>Absolute URLs:</h2>
+
+<p>Absolute URLs have the format:</p>
+
+<pre><code>protocol://domain/path
+</code></pre>
+
+<p>where the protocol can be:</p>
+
+<ul>
+<li>http</li>
+<li>https</li>
+<li>ftp</li>
+<li>file</li>
+<li>git</li>
+</ul>
+
+
+<h2>Relative URLs:</h2>
+
+<p>Relative URLs have a number of formats:</p>
+
+<pre><code>filename.html
+directoryname/filename.html
+../directoryname/filename.html
+
+/directoryname/filename.html
+/directoryname/subdirectoryname/
+</code></pre>
+
+<p>In the first three cases everything is relative to referring page.</p>
+
+<p><code>filename.html</code> should be in the same directory with the referring page.</p>
+
+<p><code>directory/filename.html</code> filename.html should be in the directoryname directory which is in the referring page&rsquo;s directory.</p>
+
+<p><code>../</code> is for one directory up from referring page&rsquo;s directory</p>
+
+<p>When we have <code>/</code> at the beginning of directoryname, we are refering to current root of the Web Server. This relative path is actually relative to root of the server, not relative to referring page.</p>
+
+<p>Finally, when our URL ends with <code>/</code>, Web Servers actually try to fetch the default page (which is normally index.html).</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Windows 7 Path Tricks]]></title>

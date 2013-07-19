@@ -9,7 +9,7 @@
   <meta name="author" content="Aydın Sakar">
 
   
-  <meta name="description" content="There are a number of things to remember when you deal with the Path environment variable in Windows. The items in the Path string are seperated by &hellip;">
+  <meta name="description" content="I just wanted to check if I can see my blog without a Web Server. This is what I got when I clicked on the index.html: When I checked the source I &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +65,95 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/07/19/url-magic/">URL Magic</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-19T10:19:00-04:00" pubdate data-updated="true">Jul 19<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I just wanted to check if I can see my blog without a Web Server.</p>
+
+<p>This is what I got when I clicked on the <code>index.html</code>:</p>
+
+<p><img src="/images/blog_in_chrome.png" title="My Poor Web Site" ></p>
+
+<p>When I checked the source I found out that all the links were as:</p>
+
+<pre><code>href="/blog/2013/07/18/windows-7-path-tricks/"
+</code></pre>
+
+<p>So we need a short cheatsheet for URLs in Web pages:</p>
+
+<h2>Absolute URLs:</h2>
+
+<p>Absolute URLs have the format:</p>
+
+<pre><code>protocol://domain/path
+</code></pre>
+
+<p>where the protocol can be:</p>
+
+<ul>
+<li>http</li>
+<li>https</li>
+<li>ftp</li>
+<li>file</li>
+<li>git</li>
+</ul>
+
+
+<h2>Relative URLs:</h2>
+
+<p>Relative URLs have a number of formats:</p>
+
+<pre><code>filename.html
+directoryname/filename.html
+../directoryname/filename.html
+
+/directoryname/filename.html
+/directoryname/subdirectoryname/
+</code></pre>
+
+<p>In the first three cases everything is relative to referring page.</p>
+
+<p><code>filename.html</code> should be in the same directory with the referring page.</p>
+
+<p><code>directory/filename.html</code> filename.html should be in the directoryname directory which is in the referring page&rsquo;s directory.</p>
+
+<p><code>../</code> is for one directory up from referring page&rsquo;s directory</p>
+
+<p>When we have <code>/</code> at the beginning of directoryname, we are refering to current root of the Web Server. This relative path is actually relative to root of the server, not relative to referring page.</p>
+
+<p>Finally, when our URL ends with <code>/</code>, Web Servers actually try to fetch the default page (which is normally index.html).</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -869,6 +958,10 @@ id sem consectetuer libero luctus adipiscing.</p></blockquote>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/07/19/url-magic/">URL Magic</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/07/18/windows-7-path-tricks/">Windows 7 Path Tricks</a>
       </li>
     
@@ -884,10 +977,6 @@ id sem consectetuer libero luctus adipiscing.</p></blockquote>
         <a href="/blog/2013/07/18/dealing-with-the-path-in-windows-7/">Dealing With the Path in Windows 7. I</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2013/07/17/code-blocks-options-with-octopress/">Code Blocks Options With Octopress</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -897,7 +986,7 @@ id sem consectetuer libero luctus adipiscing.</p></blockquote>
 <li class='category'><a href='/blog/categories/fixed-layout-ebook/'>Fixed Layout eBook (1)</a></li>
 <li class='category'><a href='/blog/categories/github/'>GitHub (1)</a></li>
 <li class='category'><a href='/blog/categories/markdown/'>Markdown (2)</a></li>
-<li class='category'><a href='/blog/categories/octopress/'>Octopress (3)</a></li>
+<li class='category'><a href='/blog/categories/octopress/'>Octopress (4)</a></li>
 <li class='category'><a href='/blog/categories/path/'>Path (2)</a></li>
 <li class='category'><a href='/blog/categories/tools/'>Tools (2)</a></li>
 <li class='category'><a href='/blog/categories/windows-7/'>Windows 7 (2)</a></li>

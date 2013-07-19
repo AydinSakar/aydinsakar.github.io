@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Fargo - My Web Adventures</title>
+  <title>URL Magic - My Web Adventures</title>
   <meta name="author" content="Aydın Sakar">
 
   
-  <meta name="description" content="Another notetaking, todo list, outlining etc., web application which seems very promising: Fargo.io brought to us by our old Dave Winer. Fargo uses &hellip;">
+  <meta name="description" content="I just wanted to check if I can see my blog without a Web Server. This is what I got when I clicked on the index.html: When I checked the source I &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://AydinSakar.github.io/blog/2013/07/18/fargo">
+  <link rel="canonical" href="http://AydinSakar.github.io/blog/2013/07/19/url-magic">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="My Web Adventures" type="application/atom+xml">
@@ -68,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">Fargo</h1>
+      <h1 class="entry-title">URL Magic</h1>
     
     
       <p class="meta">
@@ -84,16 +84,67 @@
   
 
 
-<time datetime="2013-07-18T11:08:00-04:00" pubdate data-updated="true">Jul 18<span>th</span>, 2013</time>
+<time datetime="2013-07-19T10:19:00-04:00" pubdate data-updated="true">Jul 19<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Another notetaking, todo list, outlining etc., web application which seems very promising: <a href="fargo.io">Fargo.io</a> brought to us by our old <a href="http://scripting.com/">Dave Winer</a>.</p>
+<div class="entry-content"><p>I just wanted to check if I can see my blog without a Web Server.</p>
 
-<p>Fargo uses your <a href="http://www.dropbox.com">Dropbox</a> account to save all the work you have done. That means no exporting! You always have your files in <a href="http://en.wikipedia.org/wiki/OPML">OPML</a> format.</p>
+<p>This is what I got when I clicked on the <code>index.html</code>:</p>
+
+<p><img src="/images/blog_in_chrome.png" title="My Poor Web Site" ></p>
+
+<p>When I checked the source I found out that all the links were as:</p>
+
+<pre><code>href="/blog/2013/07/18/windows-7-path-tricks/"
+</code></pre>
+
+<p>So we need a short cheatsheet for URLs in Web pages:</p>
+
+<h2>Absolute URLs:</h2>
+
+<p>Absolute URLs have the format:</p>
+
+<pre><code>protocol://domain/path
+</code></pre>
+
+<p>where the protocol can be:</p>
+
+<ul>
+<li>http</li>
+<li>https</li>
+<li>ftp</li>
+<li>file</li>
+<li>git</li>
+</ul>
+
+
+<h2>Relative URLs:</h2>
+
+<p>Relative URLs have a number of formats:</p>
+
+<pre><code>filename.html
+directoryname/filename.html
+../directoryname/filename.html
+
+/directoryname/filename.html
+/directoryname/subdirectoryname/
+</code></pre>
+
+<p>In the first three cases everything is relative to referring page.</p>
+
+<p><code>filename.html</code> should be in the same directory with the referring page.</p>
+
+<p><code>directory/filename.html</code> filename.html should be in the directoryname directory which is in the referring page&rsquo;s directory.</p>
+
+<p><code>../</code> is for one directory up from referring page&rsquo;s directory</p>
+
+<p>When we have <code>/</code> at the beginning of directoryname, we are refering to current root of the Web Server. This relative path is actually relative to root of the server, not relative to referring page.</p>
+
+<p>Finally, when our URL ends with <code>/</code>, Web Servers actually try to fetch the default page (which is normally index.html).</p>
 </div>
 
 
@@ -116,12 +167,12 @@
   
 
 
-<time datetime="2013-07-18T11:08:00-04:00" pubdate data-updated="true">Jul 18<span>th</span>, 2013</time>
+<time datetime="2013-07-19T10:19:00-04:00" pubdate data-updated="true">Jul 19<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/fargo/'>Fargo</a>
+    <a class='category' href='/blog/categories/octopress/'>Octopress</a>
   
 </span>
 
@@ -130,7 +181,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://AydinSakar.github.io/blog/2013/07/18/fargo/" data-via="" data-counturl="http://AydinSakar.github.io/blog/2013/07/18/fargo/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://AydinSakar.github.io/blog/2013/07/19/url-magic/" data-via="" data-counturl="http://AydinSakar.github.io/blog/2013/07/19/url-magic/" >Tweet</a>
   
   
   
@@ -139,10 +190,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/07/18/why-static-site-generation/" title="Previous Post: Why Static Site Generation?">&laquo; Why Static Site Generation?</a>
+        <a class="basic-alignment left" href="/blog/2013/07/18/windows-7-path-tricks/" title="Previous Post: Windows 7 Path Tricks">&laquo; Windows 7 Path Tricks</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/07/18/windows-7-path-tricks/" title="Next Post: Windows 7 Path Tricks">Windows 7 Path Tricks &raquo;</a>
       
     </p>
   </footer>
