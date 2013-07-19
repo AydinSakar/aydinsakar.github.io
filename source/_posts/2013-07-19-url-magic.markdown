@@ -1,0 +1,59 @@
+---
+layout: post
+title: "URL Magic"
+date: 2013-07-19 10:19
+comments: true
+published: true
+categories: 
+- Octopress
+---
+
+I just wanted to check if I can see my blog without a Web Server. 
+
+This is what I got when I clicked on the `index.html`:
+
+{% img /images/blog_in_chrome.png My Poor Web Site %}
+
+When I checked the source I found out that all the links were as:
+
+    href="/blog/2013/07/18/windows-7-path-tricks/"
+
+So we need a short cheatsheet for URLs in Web pages:
+
+## Absolute URLs:
+
+Absolute URLs have the format:
+
+    protocol://domain/path
+
+where the protocol can be:
+
+* http
+* https
+* ftp
+* file
+* git
+
+## Relative URLs:
+
+Relative URLs have a number of formats:
+
+    filename.html
+    directoryname/filename.html
+    ../directoryname/filename.html
+
+    /directoryname/filename.html
+    /directoryname/subdirectoryname/
+
+In the first three cases everything is relative to referring page.
+
+`filename.html` should be in the same directory with the referring page.
+
+`directory/filename.html` filename.html should be in the directoryname directory which is in the referring page's directory.
+
+`../` is for one directory up from referring page's directory
+
+When we have `/` at the beginning of directoryname, we are refering to current root of the Web Server. This relative path is actually relative to root of the server, not relative to referring page.
+
+Finally, when our URL ends with `/`, Web Servers actually try to fetch the default page (which is normally index.html).
+
