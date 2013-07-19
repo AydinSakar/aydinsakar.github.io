@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Not A Geek"
+date: 2013-07-19 11:47
+comments: true
+categories: 
+- Good Reads
+---
+
+[A very interesting post](http://mattgemmell.com/2013/07/12/not-a-geek/)
