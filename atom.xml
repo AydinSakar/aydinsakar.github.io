@@ -4,7 +4,7 @@
   <title><![CDATA[My Web Adventures]]></title>
   <link href="http://AydinSakar.github.io/atom.xml" rel="self"/>
   <link href="http://AydinSakar.github.io/"/>
-  <updated>2013-07-18T13:07:00-04:00</updated>
+  <updated>2013-07-18T20:37:01-04:00</updated>
   <id>http://AydinSakar.github.io/</id>
   <author>
     <name><![CDATA[Aydın Sakar]]></name>
@@ -22,12 +22,32 @@
 
 <ol>
 <li><p>The items in the <code>Path</code> string are seperated by semicolon: <code>;</code>, there should be no space around the semicolon. &ldquo;C:\SomePath ; C:\AnotherPath&rdquo; is <strong>NOT</strong> OK.</p></li>
-<li><p>It is better to us <code>\</code> instead of any <code>/</code> in the string.</p></li>
+<li><p>It is better to use <code>\</code> instead of any <code>/</code> in the string.</p></li>
 <li><p>No final backslash as in: <code>C:\SomeDirectory\</code>.</p></li>
 <li><p>Whenever you make a change to <code>Path</code> variable, be sure to close and reopen any Cmd or Shell window.</p></li>
 <li><p>You can add a new environment variable as &ldquo;myexedir&rdquo; and add that variable as ;%myexedir% to the Path string.</p></li>
+<li><p>Open cmd.exe with administrator privileges and type:</p>
+
+<p> setx path &ldquo;%path%;C:\Python27&rdquo; /m</p></li>
 </ol>
 
+
+<p><code>/m</code> makes the changes at the <code>system environment</code>, if you omit it then the changes are made in the <code>local environment</code>.</p>
+
+<ol>
+<li><p>Nonexisting paths in <code>Path</code> can cause problems.</p></li>
+<li><p><a href="http://pathmanager.sourceforge.net/">Path Manager</a> is a little utlity that helps with the <code>Path</code> problems.</p></li>
+<li><p>You can prepare a bat file:</p>
+
+<p> @echo off
+ PATH C:\Python27;%path%
+ title Octopress &ndash; %Username%@%Computername%
+ cd C:\Projects\WebProjects\octopress
+ cmd</p></li>
+</ol>
+
+
+<p>Which will add the directory you want to be added to the Path. This will be valid for the command session only, and as a bonus can land you right into the directory that you want to work. This solution is the one that I feel more comfortable with.</p>
 
 <p>For a discussion about these recommendations on <a href="http://stackoverflow.com">Stackoverflow</a> see: <a href="http://stackoverflow.com/questions/6318156/adding-python-path-on-windows-7">http://stackoverflow.com/questions/6318156/adding-python-path-on-windows-7</a></p>
 ]]></content>
