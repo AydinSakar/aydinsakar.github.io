@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Good Reads | My Web Adventures]]></title>
+  <link href="http://AydinSakar.github.io/blog/categories/good-reads/atom.xml" rel="self"/>
+  <link href="http://AydinSakar.github.io/"/>
+  <updated>2013-07-19T11:48:31-04:00</updated>
+  <id>http://AydinSakar.github.io/</id>
+  <author>
+    <name><![CDATA[Aydın Sakar]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Not A Geek]]></title>
+    <link href="http://AydinSakar.github.io/blog/2013/07/19/not-a-geek/"/>
+    <updated>2013-07-19T11:47:00-04:00</updated>
+    <id>http://AydinSakar.github.io/blog/2013/07/19/not-a-geek</id>
+    <content type="html"><![CDATA[<p><a href="http://mattgemmell.com/2013/07/12/not-a-geek/">A very interesting post</a></p>
+]]></content>
+  </entry>
+  
+</feed>
