@@ -5,6 +5,7 @@ date: 2013-07-18 09:57
 comments: true
 categories: 
 - Windows 7
+- Path
 ---
 
 The `Path` environment variable in Windows is always a problem to deal with.
