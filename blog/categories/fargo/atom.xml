@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Fargo | My Web Adventures]]></title>
   <link href="http://AydinSakar.github.io/blog/categories/fargo/atom.xml" rel="self"/>
   <link href="http://AydinSakar.github.io/"/>
-  <updated>2013-07-19T11:48:31-04:00</updated>
+  <updated>2013-07-24T16:41:51-04:00</updated>
   <id>http://AydinSakar.github.io/</id>
   <author>
     <name><![CDATA[Aydın Sakar]]></name>
@@ -18,7 +18,7 @@
     <link href="http://AydinSakar.github.io/blog/2013/07/18/fargo/"/>
     <updated>2013-07-18T11:08:00-04:00</updated>
     <id>http://AydinSakar.github.io/blog/2013/07/18/fargo</id>
-    <content type="html"><![CDATA[<p>Another notetaking, todo list, outlining etc., web application which seems very promising: <a href="fargo.io">Fargo.io</a> brought to us by our old <a href="http://scripting.com/">Dave Winer</a>.</p>
+    <content type="html"><![CDATA[<p>Another notetaking, todo list, outlining etc., web application which seems very promising: <a href="http://fargo.io/">Fargo.io</a> brought to us by our old <a href="http://scripting.com/">Dave Winer</a>.</p>
 
 <p>Fargo uses your <a href="http://www.dropbox.com">Dropbox</a> account to save all the work you have done. That means no exporting! You always have your files in <a href="http://en.wikipedia.org/wiki/OPML">OPML</a> format.</p>
 ]]></content>
