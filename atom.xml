@@ -4,7 +4,7 @@
   <title><![CDATA[My Web Adventures]]></title>
   <link href="http://AydinSakar.github.io/atom.xml" rel="self"/>
   <link href="http://AydinSakar.github.io/"/>
-  <updated>2013-07-28T00:08:01-04:00</updated>
+  <updated>2013-07-31T13:03:15-04:00</updated>
   <id>http://AydinSakar.github.io/</id>
   <author>
     <name><![CDATA[Aydın Sakar]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[JavaScript Web Application]]></title>
+    <link href="http://AydinSakar.github.io/blog/2013/07/31/javascript-web-application/"/>
+    <updated>2013-07-31T12:55:00-04:00</updated>
+    <id>http://AydinSakar.github.io/blog/2013/07/31/javascript-web-application</id>
+    <content type="html"><![CDATA[<p>Dan Gebhardt thinks we should use the term <a href="http://www.cerebris.com/blog/2013/07/31/single-page-applications/">JavaScript Web Applications</a>. Probably we will use JWA instead of SPA(Single Page Applications) from now on.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Not A Geek]]></title>
